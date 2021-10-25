@@ -1,0 +1,100 @@
+html,body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(230, 230, 230);
+    box-sizing: border-box;
+}
+.signInContainer{
+    /* background-color: #efefee; */
+    background: url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y:auto ;
+}
+.column{
+    background-color: rgba(0, 0, 0, 0.888);
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+    padding: 20px 35px;
+    box-shadow: rgba(0,0,0,0.1) 0 2px 3px;
+    
+    
+}
+.column form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+
+}
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"] {
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #dedede;
+}
+.column form input[type="submit"]{
+    background-color: #4285f4;
+    color: white;
+    height: 36px;
+    width: 88px;
+    border: none;
+    border-radius: 3px ;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.column .header {
+    padding: 20px 0;
+}
+
+.column h3{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 16px;
+    color: rgb(230, 230, 230);
+}
+.column .header span{
+    font-size: 14px;
+}
+
+.column .header img{
+    width: 100px;
+}
+
+.signInMessage{
+font-size: 14px;
+font-weight: 400;
+text-decoration: none;
+}
+
+.errorMessage{
+    color:#f00;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background: rgba(241, 155, 155, 0.699);
+
+}
+.successMessage{
+    color:rgb(16, 187, 93);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background-color: rgba(127, 255, 212, 0.74);
+
+}

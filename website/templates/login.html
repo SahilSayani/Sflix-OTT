@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SFlix</title>
+    <link rel="stylesheet" href="../static/formstyles/style.css">
+</head>
+
+<body>
+    
+    <div class="signInContainer">
+        <div class="column">
+            <div class="header">
+                <img src="../static/images/Logo.png" title="logo" alt="Site Logo"/>
+                <h3>Sign In</h3>
+                <span>to continue to SFlix</span>
+                
+            </div>
+            <form method="POST">
+
+                <input type="text" name="username" id="username" placeholder="Username" required>
+                
+                <input type="password" name="password" id="password" placeholder="Password" required>
+               
+                <input type="submit" name="submitButton" value="SUBMIT">
+            </form>
+            <a href="/sign-up" class="signInMessage">Dont have an account ? Sign Up here !</a>
+        </div>
+    </div>
+</body>
+
+</html>
+{%endblock%}
