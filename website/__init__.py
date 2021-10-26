@@ -6,11 +6,12 @@ from flask_login import LoginManager, login_manager
 
 db=SQLAlchemy()
 DB_NAME="database.db"
-
+# sflix.sqlite
 def create_app():
     app=Flask(__name__,template_folder="templates")
     app.config['SECRET_KEY']="abcd"
     app.config['SQLALCHEMY_DATABASE_URI']=f'sqlite:///{DB_NAME}'
+    # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/sflix'
     db.init_app(app)
 
     from .views import views

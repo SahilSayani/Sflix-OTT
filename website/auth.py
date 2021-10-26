@@ -56,6 +56,7 @@ def sign_up():
             login_user(user,remember=True)
             flash('Account Created Successfully',category='success')
             
+            
             #add user to Database
 
     return render_template("register.html",user=current_user)
