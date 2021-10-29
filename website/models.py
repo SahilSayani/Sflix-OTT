@@ -17,3 +17,11 @@ class User(db.Model,UserMixin):
     notes=db.relationship('Note')
 # class Entity(db.Model):
 #     id=db.Column(db.Integer,primary_key=True)
+
+
+# class Entity(db.Model):
+#     __bind_key__ = 'sflix'
+#     __tablename__ = 'categories'
+#     id = db.Column('id',db.Integer, primary_key=True)
+#     name = db.Column('name', db.String(255), unique=True)
+

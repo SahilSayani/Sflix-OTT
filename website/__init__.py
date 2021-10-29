@@ -12,6 +12,12 @@ def create_app():
     app.config['SECRET_KEY']="abcd"
     app.config['SQLALCHEMY_DATABASE_URI']=f'sqlite:///{DB_NAME}'
     # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/sflix'
+    
+    
+#     app.config['SQLALCHEMY_BINDS'] = {
+#         'sflix': 'mysql://root:@localhost/sflix'
+# }
+
     db.init_app(app)
 
     from .views import views

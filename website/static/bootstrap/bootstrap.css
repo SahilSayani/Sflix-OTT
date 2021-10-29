@@ -4490,6 +4490,8 @@ textarea.form-control-lg {
   position: relative;
   display: flex;
   flex-direction: column;
+  max-width:290px;
+  max-height:180px;
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
