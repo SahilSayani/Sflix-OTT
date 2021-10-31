@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sflix VidPlayer</title>
+    <link rel="stylesheet" href="../static/style.css" />
+
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+        <a href="/home">
+            <img class="nav__logo" src="{{ url_for('static', filename='images/Logo.png') }}" alt=""/>
+        </a>
+        <a href="/home" class="btn btn-rounded btn-danger logout-btn">Back</a>
+    </div>
+    <!-- CODE FOR VIDEO PLAYER -->
+    
+    <br>
+    <div class="video-player">
+        <video class="vidPlayer" src="{{ url_for('static', filename='entities/previews/1.mp4') }}"
+            poster="../static/entities/thumbnails/friends.jpg" controls playsinline></video>
+    </div>
+    <br>
+    <!-- VID PLAYER ENDS -->
+    <footer class="footer">
+        <p>Questions? Call 1-866-579-7172</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Ways To Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">SFlix Originals</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Redeem Gift Cards</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Buy Gift Cards</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>

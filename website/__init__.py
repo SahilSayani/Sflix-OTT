@@ -15,7 +15,7 @@ def create_app():
     
     
 #     app.config['SQLALCHEMY_BINDS'] = {
-#         'sflix': 'mysql://root:@localhost/sflix'
+#         'sflix': 'sqlite:///sflix.sqlite'
 # }
 
     db.init_app(app)

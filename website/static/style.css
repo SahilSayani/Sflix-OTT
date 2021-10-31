@@ -580,4 +580,10 @@ img {
 	background-color: #111;
   }
   
-  
+   /* VIDEO PLAYER CSS */
+   .vidPlayer{
+	   padding: 5% 8% 8% 8%;
+	   align-items: center;
+	   justify-content: center;
+	   max-width:1080px;
+   }

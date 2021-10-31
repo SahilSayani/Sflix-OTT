@@ -12,3 +12,8 @@ def index():
 @login_required
 def home():
         return render_template("home.html",user=current_user)
+
+@views.route('/playVid',methods=['GET','POST'])
+@login_required
+def playVid():
+        return render_template("playVid.html",user=current_user)        
